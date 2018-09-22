@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+{% block content %}
+	<h1>welcome about us</h1>
+
+	{% for post in posts %}
+	 <div class="card" style="margin-bottom: 2rem">
+	 	<div class="card-body">
+	 	
+		 <p>author is {{post.author}} </p>
+		 <p>Contents: {{post.content}} </p>
+		 <h5>date: {{post.date_posted}}</h5>
+		</div>
+	 </div>
+		 
+	{% endfor %}
+{% endblock content %}
